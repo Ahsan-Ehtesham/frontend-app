@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../assets/images/logo.png";
 import { FaTelegram } from "react-icons/fa";
 import {FaXTwitter} from "react-icons/fa6";
 
 export const Navbar = () => {
+  useEffect(() => {
+    const toggleButton = document.getElementById("darkSwitch");
+    const body = document.body;
+    
+    toggleButton.addEventListener("click", () => {
+      body.classList.add("dark-mode");
+    });
+  }, [])
+  
   return (
     <>
       <nav className="navbar navbar-expand-lg">
