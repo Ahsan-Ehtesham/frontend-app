@@ -59,40 +59,12 @@ body {
   }
   .description {
     margin: 20px 0;
-
     font-size: 1.125rem;
     color: $dark-color;
   }
 }
 
-#about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .subtitle {
-    font-size: 1.5rem;
-    color: $secondary-color;
-  }
-  h2 {
-    font-weight: 700;
-    color: white;
-  }
-  .description {
-    margin: 20px 0;
-
-    font-size: 1.125rem;
-    color: white;
-  }
-  img {
-    max-width: 100%;
-  }
-}
-
 #features {
-  .subtitle {
-    font-size: 1.5rem;
-    color: $primary-color;
-  }
   h2 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -115,6 +87,66 @@ body {
       color: white;
       text-align: center;
       h4 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+#cta{
+  background-color: $primary-color;
+  text-align: center;
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $third-color;
+  }
+  p{
+    font-size: 1.125rem;
+    color: $third-color;
+    width: 75%;
+    margin: 20px auto;
+  }
+  .card {
+    border: none;
+    background: linear-gradient(
+      135deg,
+      #2a4069 0%,
+      #2a4069 35%,
+      rgba(0, 0, 255, 0.25) 100%
+    );
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 50px rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    
+    padding: 20px;
+    height: 100%;
+    .card-body {
+      color: white;
+      text-align: center;
+      .number-container {
+        /* Style for the container that holds the number */
+        width: 50px; /* Adjust the width as needed */
+        height: 50px; /* Adjust the height as needed */
+        background-color: $secondary-color; /* Change the background color as desired */
+        text-align: center;
+        line-height: 50px; /* Center the text vertically */
+        border-radius: 50%; /* Make it a circle, assuming a square container */
+        margin: 20px auto; /* Center the container within the parent element */
+        margin-top: 0px;
+      }
+      
+      .number {
+        /* Style for the number itself */
+        color: $primary-color; /* Text color */
+        font-size: 24px; /* Adjust the font size as needed */
+        font-weight: bold; /* Add bold style if desired */
+      }
+      
+      h5 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      p{
         font-size: 1.25rem;
       }
     }
