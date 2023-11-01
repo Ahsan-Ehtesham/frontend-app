@@ -19,7 +19,7 @@ export const Faq = () => {
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  1. What is Decentralance?
+                  <span>1.</span> What is Decentralance?
                 </button>
               </h2>
               <div
@@ -43,7 +43,7 @@ export const Faq = () => {
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  2. How does Decentralance work?
+                  <span>2.</span> How does Decentralance work?
                 </button>
               </h2>
               <div
@@ -67,7 +67,7 @@ export const Faq = () => {
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  3. Is Decentralance only for blockchain developers?
+                  <span>3.</span> Is Decentralance only for blockchain developers?
                 </button>
               </h2>
               <div
@@ -91,7 +91,7 @@ export const Faq = () => {
                   aria-expanded="false"
                   aria-controls="collapseFour"
                 >
-                  4. Is Decentralance safe and secure?
+                  <span>4.</span> Is Decentralance safe and secure?
                 </button>
               </h2>
               <div
@@ -114,7 +114,7 @@ export const Faq = () => {
                   aria-expanded="false"
                   aria-controls="collapseFive"
                 >
-                  5. How do I get paid on Decentralance?
+                  <span>5.</span> How do I get paid on Decentralance?
                 </button>
               </h2>
               <div
@@ -137,7 +137,7 @@ export const Faq = () => {
                   aria-expanded="false"
                   aria-controls="collapseSix"
                 >
-                  6. Is Decentralance available worldwide?
+                  <span>6.</span> Is Decentralance available worldwide?
                 </button>
               </h2>
               <div
@@ -160,7 +160,7 @@ export const Faq = () => {
                   aria-expanded="false"
                   aria-controls="collapseSeven"
                 >
-                  7. Are there any fees for using Decentralance?
+                  <span>7.</span> Are there any fees for using Decentralance?
                 </button>
               </h2>
               <div
@@ -183,7 +183,7 @@ export const Faq = () => {
                   aria-expanded="false"
                   aria-controls="collapseEight"
                 >
-                  8. How do I sign up on Decentralance?
+                  <span>8.</span> How do I sign up on Decentralance?
                 </button>
               </h2>
               <div
@@ -206,7 +206,7 @@ export const Faq = () => {
                   aria-expanded="false"
                   aria-controls="collapseNine"
                 >
-                  9. Can I communicate with clients or freelancers before starting a project?
+                  <span>9.</span> Can I communicate with clients or freelancers before starting a project?
                 </button>
               </h2>
               <div
@@ -229,7 +229,7 @@ export const Faq = () => {
                   aria-expanded="false"
                   aria-controls="collapseTen"
                 >
-                  10. Is Decentralance a decentralized platform?
+                  <span>10.</span> Is Decentralance a decentralized platform?
                 </button>
               </h2>
               <div
@@ -252,7 +252,7 @@ export const Faq = () => {
                   aria-expanded="false"
                   aria-controls="collapse11"
                 >
-                  11. Can I use Decentralance for both short-term and long-term projects?
+                  <span>11.</span> Can I use Decentralance for both short-term and long-term projects?
                 </button>
               </h2>
               <div
@@ -275,7 +275,7 @@ export const Faq = () => {
                   aria-expanded="false"
                   aria-controls="collapse12"
                 >
-                  12. What sets Decentralance apart from other freelance marketplaces?
+                  <span>12.</span> What sets Decentralance apart from other freelance marketplaces?
                 </button>
               </h2>
               <div
@@ -298,7 +298,7 @@ export const Faq = () => {
                   aria-expanded="false"
                   aria-controls="collapse13"
                 >
-                  13. What should I do if I have a problem with a project or payment?
+                  <span>13.</span> What should I do if I have a problem with a project or payment?
                 </button>
               </h2>
               <div
@@ -321,7 +321,7 @@ export const Faq = () => {
                   aria-expanded="false"
                   aria-controls="collapse14"
                 >
-                  14. How can I contact Decentralance support if I have questions or issues?
+                  <span>14.</span> How can I contact Decentralance support if I have questions or issues?
                 </button>
               </h2>
               <div

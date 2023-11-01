@@ -363,23 +363,29 @@ body.dark-mode {
 }
 
 #faq {
-  background-color: $primary-color;
   h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: $third-color;
+    color: $dark-color;
   }
   .accordion {
-    --bs-accordion-bg: #eee;
-    --bs-accordion-color: #000;
+    --bs-accordion-bg: #2a4069;
+    --bs-accordion-color: #fff;
     --bs-accordion-border-color: transparent;
-    --bs-accordion-btn-color: #000;
+    --bs-accordion-btn-color: #fff;
     --bs-accordion-btn-bg: transparent;
     --bs-accordion-active-bg: transparent;
-    --bs-accordion-active-color: #000;
+    --bs-accordion-active-color: #fff;
     --bs-accordion-btn-focus-border-color: transparent;
     --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem transparent;
     // filter: brightness(0) invert(1);
+  }
+  .accordion-button::after {
+    filter: brightness(0) invert(1);
+  }
+  span{
+    color: $secondary-color;
+    margin-right: 10px;
   }
 }
 
