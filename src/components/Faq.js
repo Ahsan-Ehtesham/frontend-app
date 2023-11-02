@@ -284,7 +284,7 @@ export const Faq = () => {
                 data-bs-parent="#accordionExample"
               >
                 <div className="accordion-body">
-                  Decentralance is tailored specifically for the crypto industry, ensuring that users have access to a niche network of crypto professionals and clients. We are committed to fostering innovation and collaboration within this unique ecosystem.
+                Decentralance is tailored specifically for the crypto industry, ensuring that users have access to a niche network of crypto professionals and clients. Also, all payments are in major cryptocurrencies like USDT, USDC, BNB, ETH and handled through decentralized escrow by smart contracts making sure that sellers get paid and buyers get value for what they pay for. We are committed to fostering innovation and collaboration within this unique ecosystem.
                 </div>
               </div>
             </div>

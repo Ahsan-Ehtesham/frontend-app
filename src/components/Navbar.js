@@ -1,24 +1,20 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { useDarkMode } from './DarkModeContext';
 import logo from "../assets/images/logo.png";
+import part_logo from "../assets/images/part header.png";
 import { FaTelegram } from "react-icons/fa";
 import {FaXTwitter} from "react-icons/fa6";
 
 export const Navbar = () => {
-  useEffect(() => {
-    const toggleButton = document.getElementById("darkSwitch");
-    const body = document.body;
-    
-    toggleButton.addEventListener("click", () => {
-      body.classList.add("dark-mode");
-    });
-  }, [])
+  const { toggleDarkMode } = useDarkMode();
+  const { isDarkMode } = useDarkMode();
   
   return (
     <>
-      <nav className="navbar navbar-expand-lg">
+      <nav className={`navbar navbar-expand-lg ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
         <div className="container">
           <a className="navbar-brand" href="/">
-            <img src={logo} width="100px" alt="logo" /> Decentralance
+            <img src={logo} width="100px" alt="logo" /> <img src={part_logo} width="200px" alt="logo" />
           </a>
           <button
             className="navbar-toggler bg-white"
@@ -72,16 +68,17 @@ export const Navbar = () => {
                     type="checkbox"
                     role="switch"
                     id="darkSwitch"
+                    onClick={toggleDarkMode}
                   />
                 </div>
               </li>
               <li className="me-3">
-                <a className="text-dark" href="/">
+                <a className="text-dark" href="https://t.me/decentralance">
                   <FaTelegram style={{ fontSize: "2rem" }} />
                 </a>
               </li>
               <li>
-                <a className="text-dark" href="/">
+                <a className="text-dark" href="https://twitter.com/Decentralance">
                   <FaXTwitter style={{ fontSize: "2rem" }} />
                 </a>
               </li>

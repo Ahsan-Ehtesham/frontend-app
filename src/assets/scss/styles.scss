@@ -9,19 +9,18 @@ $dark-color: #000;
 }
 
 body {
-  // background-color: $primary-color;
   background: $third-color;
   font-family: "Poppins", sans-serif;
 }
 
-body.dark-mode {
+.navbar.dark-mode {
   background-color: $primary-color;
 }
 
 .navbar {
   // transition: all 0.5s;
   // background: transparent;
-  background: $third-color;
+  // background: $third-color;
   .nav-link {
     color: $primary-color;
     &:hover {
@@ -29,6 +28,19 @@ body.dark-mode {
       text-shadow: 0px 0px 30px $secondary-color;
       transition: all 0.2s ease-in;
     }
+  }
+}
+
+.navbar.dark-mode {
+  background-color: $primary-color;
+  .navbar-brand {
+    color: $third-color;
+  }
+  .nav-link {
+    color: $third-color;
+  }
+  svg {
+    color: #fff;
   }
 }
 
@@ -68,6 +80,16 @@ body.dark-mode {
   }
 }
 
+#header.dark-mode {
+  background-color: $primary-color;
+  h1 {
+    color: $third-color;
+  }
+  .description {
+    color: $third-color;
+  }
+}
+
 #features {
   h2 {
     font-size: 2.5rem;
@@ -97,7 +119,21 @@ body.dark-mode {
   }
 }
 
-#cta{
+#features.dark-mode {
+  background-color: $primary-color;
+  h2 {
+    color: $third-color;
+  }
+  .card {
+    background: transparent;
+    box-shadow: none;
+    .card-body {
+      color: $third-color;
+    }
+  }
+}
+
+#cta {
   background-color: $primary-color;
   text-align: center;
   h2 {
@@ -105,7 +141,7 @@ body.dark-mode {
     font-weight: 700;
     color: $third-color;
   }
-  p{
+  p {
     font-size: 1.125rem;
     color: $third-color;
     width: 75%;
@@ -121,7 +157,7 @@ body.dark-mode {
     );
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 50px rgba(255, 255, 255, 0.2);
     border-radius: 15px;
-    
+
     padding: 20px;
     height: 100%;
     .card-body {
@@ -138,19 +174,19 @@ body.dark-mode {
         margin: 20px auto; /* Center the container within the parent element */
         margin-top: 0px;
       }
-      
+
       .number {
         /* Style for the number itself */
         color: $primary-color; /* Text color */
         font-size: 24px; /* Adjust the font size as needed */
         font-weight: bold; /* Add bold style if desired */
       }
-      
+
       h5 {
         font-size: 2rem;
         font-weight: bold;
       }
-      p{
+      p {
         font-size: 1.25rem;
       }
     }
@@ -176,13 +212,13 @@ body.dark-mode {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 50px rgba(255, 255, 255, 0.2);
     border-radius: 15px;
   }
-  
+
   .card {
     // border: 1px solid #ccc;
     border: none;
     background: transparent;
     border-radius: 0px;
-    
+
     padding: 20px;
     height: 100%;
     .card-body {
@@ -193,6 +229,17 @@ body.dark-mode {
         font-weight: bold;
       }
     }
+  }
+}
+
+#tokenomics.dark-mode{
+  background-color: $primary-color;
+  h2{
+    color: $third-color;
+  }
+  .custom-background{
+    background: transparent;
+    box-shadow: none;
   }
 }
 
@@ -383,20 +430,19 @@ body.dark-mode {
   .accordion-button::after {
     filter: brightness(0) invert(1);
   }
-  span{
+  span {
     color: $primary-color; /* Text color */
-        font-size: 18px; /* Adjust the font size as needed */
-        font-weight: bold; /* Add bold style if desired */
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: bold; /* Add bold style if desired */
     margin-right: 10px;
     width: 35px; /* Adjust the width as needed */
-        height: 35px; /* Adjust the height as needed */
-        background-color: $secondary-color; /* Change the background color as desired */
-        text-align: center;
-        line-height: 35px; /* Center the text vertically */
-        border-radius: 50%; /* Make it a circle, assuming a square container */
+    height: 35px; /* Adjust the height as needed */
+    background-color: $secondary-color; /* Change the background color as desired */
+    text-align: center;
+    line-height: 35px; /* Center the text vertically */
+    border-radius: 50%; /* Make it a circle, assuming a square container */
   }
 }
-
 
 footer {
   .nav-link {
@@ -404,13 +450,31 @@ footer {
   }
 }
 
+footer.dark-mode {
+  background-color: $primary-color;
+  .nav-link {
+    color: $third-color;
+  }
+  svg {
+    color: #fff;
+  }
+}
+
 @media (max-width: 767px) {
   /* Rules for smartphones only */
   #header {
     height: auto;
-    h2{
+    h2 {
       font-size: 2.25rem;
-    line-height: 2rem;
+      line-height: 2rem;
+    }
+    .btn{
+      font-size: initial;
+    }
+  }
+  .navbar-brand{
+    img{
+      width: 120px;
     }
   }
 }

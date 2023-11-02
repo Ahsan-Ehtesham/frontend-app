@@ -3,11 +3,13 @@ import career from "../assets/images/career.svg";
 import decent from "../assets/images/decent.svg";
 import global from "../assets/images/global.svg";
 import security from "../assets/images/security.svg";
+import { useDarkMode } from './DarkModeContext';
 
 const Features = () => {
+  const { isDarkMode } = useDarkMode();
   return (
     <>
-      <section className="py-5" id="features">
+      <section className= {`py-5 ${isDarkMode ? 'dark-mode' : 'light-mode'}`} id="features">
         <div className="text-center mb-5">
           <h2>Features</h2>
         </div>

@@ -1,10 +1,12 @@
 import React from "react";
 import header_img from "../assets/images/logo.png";
+import { useDarkMode } from './DarkModeContext';
 
 const Header = () => {
+  const { isDarkMode } = useDarkMode();
   return (
     <>
-      <section id="header">
+      <section id="header" className={`${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
         <div className="container">
           <div className="row g-3">
             <div className="col-12 col-md-6">
@@ -16,16 +18,16 @@ const Header = () => {
               </p>
               <div className="d-flex">
                 <a href="/">
-                  <button className="btn btn-lg btn-info text-white me-2 mb-3 mb-md-0">
-                    Open App
+                  <button className="btn btn-lg text-white me-2 mb-3 mb-md-0" style={{backgroundColor: "#999966"}}>
+                    Marketplace
                   </button>
                 </a>
                 <a href="/">
-                  <button className="btn btn-lg btn-outline-info me-2 mb-3 mb-md-0">BUY DELC</button>
+                  <button className="btn btn-lg me-2 mb-3 mb-md-0" style={{border: "1px solid #999966"}}>Buy</button>
                 </a>
                 <a href="/">
-                  <button className="btn btn-lg btn-info text-white">
-                    Stake
+                  <button className="btn btn-lg text-white" style={{backgroundColor: "#999966"}}>
+                    Stake DELC
                   </button>
                 </a>
               </div>

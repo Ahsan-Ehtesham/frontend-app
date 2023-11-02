@@ -81,7 +81,7 @@ const Cta = () => {
                 crypto industry. Welcome to the world of decentralized
                 opportunity, innovation, and collaboration.
               </p>
-              <a href="/" className="btn btn-info text-white btn-lg">
+              <a href="/" className="btn text-white btn-lg" style={{backgroundColor: "#999966"}}>
                 Get Started
               </a>
             </div>

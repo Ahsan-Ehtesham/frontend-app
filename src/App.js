@@ -7,18 +7,21 @@ import Cta from "./components/Cta";
 import Tokenomics from "./components/Tokenomics";
 import { Roadmap } from "./components/Roadmap";
 import { Faq } from "./components/Faq";
+import { DarkModeProvider } from "./components/DarkModeContext";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Header />
-      <Features />
-      <Cta/>
-      <Tokenomics />
-      <Roadmap />
-      <Faq />
-      <Footer />
+      <DarkModeProvider>
+        <Navbar />
+        <Header />
+        <Features />
+        <Cta />
+        <Tokenomics />
+        <Roadmap />
+        <Faq />
+        <Footer />
+      </DarkModeProvider>
     </>
   );
 }

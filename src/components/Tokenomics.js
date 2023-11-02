@@ -2,11 +2,13 @@ import React from "react";
 import ticker from "../assets/images/ticker.svg";
 import supply from "../assets/images/supply.svg";
 import taxes from "../assets/images/taxes.svg";
+import { useDarkMode } from './DarkModeContext';
 
 const Tokenomics = () => {
+  const { isDarkMode } = useDarkMode();
   return (
     <>
-      <section id="tokenomics" className="py-5">
+      <section id="tokenomics" className={`py-5 ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
         <div className="container">
           <div className="row">
             <div className="col-12 text-center">
