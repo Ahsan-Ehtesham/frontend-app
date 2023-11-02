@@ -23,7 +23,7 @@ const Header = () => {
                   </button>
                 </a>
                 <a href="/">
-                  <button className="btn btn-lg me-2 mb-3 mb-md-0" style={{border: "1px solid #999966"}}>Buy</button>
+                  <button className="btn btn-lg me-2 mb-3 mb-md-0" style={{border: "1px solid #999966"}}>Buy DELC</button>
                 </a>
                 <a href="/">
                   <button className="btn btn-lg text-white" style={{backgroundColor: "#999966"}}>
