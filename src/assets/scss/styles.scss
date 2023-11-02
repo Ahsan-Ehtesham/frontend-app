@@ -448,6 +448,11 @@ body {
 footer {
   .nav-link {
     color: $primary-color;
+    &:hover{
+      color: $secondary-color;
+      text-shadow: 0px 0px 30px $secondary-color;
+      transition: all 0.2s ease-in;
+    }
   }
 }
 
