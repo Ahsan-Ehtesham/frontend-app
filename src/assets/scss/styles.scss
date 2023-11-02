@@ -384,8 +384,16 @@ body.dark-mode {
     filter: brightness(0) invert(1);
   }
   span{
-    color: $secondary-color;
+    color: $primary-color; /* Text color */
+        font-size: 18px; /* Adjust the font size as needed */
+        font-weight: bold; /* Add bold style if desired */
     margin-right: 10px;
+    width: 35px; /* Adjust the width as needed */
+        height: 35px; /* Adjust the height as needed */
+        background-color: $secondary-color; /* Change the background color as desired */
+        text-align: center;
+        line-height: 35px; /* Center the text vertically */
+        border-radius: 50%; /* Make it a circle, assuming a square container */
   }
 }
 
