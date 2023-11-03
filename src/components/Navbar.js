@@ -1,7 +1,6 @@
 import React from "react";
 import { useDarkMode } from './DarkModeContext';
 import logo from "../assets/images/logo.png";
-import part_logo from "../assets/images/part header.png";
 import { FaTelegram } from "react-icons/fa";
 import {FaXTwitter} from "react-icons/fa6";
 
