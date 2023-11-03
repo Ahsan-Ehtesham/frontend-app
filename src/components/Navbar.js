@@ -14,7 +14,7 @@ export const Navbar = () => {
       <nav className={`navbar navbar-expand-lg ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
         <div className="container">
           <a className="navbar-brand" href="/">
-            <img src={logo} width="100px" alt="logo" /> <img src={part_logo} width="200px" alt="logo" />
+            <img src={logo} width="300px" alt="logo" />
           </a>
           <button
             className="navbar-toggler bg-white"
