@@ -1,5 +1,5 @@
 import React from "react";
-import header_img from "../assets/images/logo.png";
+import header_img from "../assets/images/header_img.png";
 import { useDarkMode } from './DarkModeContext';
 
 const Header = () => {

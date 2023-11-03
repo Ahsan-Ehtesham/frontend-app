@@ -1,9 +1,11 @@
 import React from "react";
+import { useDarkMode } from './DarkModeContext';
 
 export const Faq = () => {
+  const { isDarkMode } = useDarkMode();
   return (
     <>
-      <section id="faq" className="py-5">
+      <section id="faq" className= {`py-5 ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
         <div className="container">
           <div className="text-center mb-5">
             <h2>FAQs</h2>

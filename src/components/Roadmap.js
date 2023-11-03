@@ -1,10 +1,12 @@
 import React from "react";
 import { FaCheckCircle,FaCircle } from "react-icons/fa";
+import { useDarkMode } from './DarkModeContext';
 
 export const Roadmap = () => {
+  const { isDarkMode } = useDarkMode();
   return (
     <>
-      <section id="roadmap" className="py-5">
+      <section id="roadmap" className= {`py-5 ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
         <div className="container">
           <div className="text-center">
             <h2>Roadmap</h2>
