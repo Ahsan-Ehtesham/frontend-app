@@ -70,7 +70,7 @@ body {
 
   h1 {
     font-size: 2.5rem;
-    line-height: 2rem;
+    // line-height: 2rem;
     font-weight: 700;
     color: $primary-color;
   }
@@ -564,7 +564,7 @@ footer.dark-mode {
       line-height: 2rem;
     }
     .btn{
-      font-size: initial;
+      font-size: 14px;
     }
   }
   .navbar-brand{

@@ -31,6 +31,7 @@ const Header = () => {
                   </button>
                 </a>
               </div>
+              <p className="lead description mt-4">Contract Address:</p>
             </div>
             <div className="col-12 col-md-6">
               <img
